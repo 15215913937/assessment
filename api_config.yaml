@@ -1,0 +1,17 @@
+#存储接口信息，包括：接口名称，方法，URL地址，data和请求头信息，以及预期结果
+host: http://assessment.dctest.jcfor.com
+
+header:
+  Content-type: application/json
+  charset: utf-8
+  Accept: "*/*"
+
+login:
+  name: 正确用户登录
+  method: post
+  url: /api/admin/medical/login
+  json:
+    loginName: "tzhospital"
+    password: "123456"
+user:
+  url: /api/admin/system/user/login-info

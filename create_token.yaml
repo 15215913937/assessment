@@ -1,0 +1,26 @@
+-
+  name: 正确用户登录
+  request:
+    method: post
+    url: http://assessment.dctest.jcfor.com/api/admin/medical/login
+    json:
+      loginName: tzhospital
+      password: 123456
+    header:
+      Content-type: application/json
+      charset: utf-8
+      Accept: "*/*"
+  validate: None
+-
+  name: 错误用户登录（空账户）
+  request:
+    method: post
+    url: http://assessment.dctest.jcfor.com/api/admin/medical/login
+    json:
+      loginName: ""
+      password: 123456
+    header:
+      Content-type: application/json
+      charset: utf-8
+      Accept: "*/*"
+  validate: None

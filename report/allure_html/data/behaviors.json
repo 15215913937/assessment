@@ -1,0 +1,56 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_userinfo",
+    "uid" : "a5cd946f8681baf",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644302780419,
+      "stop" : 1644302780490,
+      "duration" : 71
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_correctLogin[args_name0]",
+    "uid" : "6cd6cd4bbcef687e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644302780493,
+      "stop" : 1644302780552,
+      "duration" : 59
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'name': '正确用户登录', 'request': {'method': 'post', 'url': 'http://assessment.dctest.jcfor.com/api/admin/medical/login', 'json': {'loginName': 'tzhospital', 'password': 123456}, 'header': {'Content-type': 'application/json', 'charset': 'utf-8', 'Accept': '*/*'}}, 'validate': 'None'}" ]
+  }, {
+    "name" : "test_correctLogin[args_name1]",
+    "uid" : "8b49371e82cdf8cc",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644302780555,
+      "stop" : 1644302780624,
+      "duration" : 69
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'name': '错误用户登录（空账户）', 'request': {'method': 'post', 'url': 'http://assessment.dctest.jcfor.com/api/admin/medical/login', 'json': {'loginName': '', 'password': 123456}, 'header': {'Content-type': 'application/json', 'charset': 'utf-8', 'Accept': '*/*'}}, 'validate': 'None'}" ]
+  } ]
+}
